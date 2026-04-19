@@ -1,7 +1,9 @@
-import textnode
+from textnode import TextNode, TextType
 
-print("hello world")
 
 def main():
-    testObj = textnode("test", "link", "google.com")
-    print(testObj)
+    node = TextNode("This is a text node", TextType.BOLD, "https://www.boot.dev")
+    print(node)
+
+
+main()
